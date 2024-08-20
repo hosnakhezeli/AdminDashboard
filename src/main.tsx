@@ -7,8 +7,6 @@ import theme from './lib/theme.ts'
 import Rtl from './components/Rtl/Rtl.tsx'
 import { CssBaseline } from '@mui/material'
 
-
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
@@ -17,5 +15,5 @@ createRoot(document.getElementById('root')!).render(
         <App />
       </Rtl>
     </ThemeProvider>
-  </StrictMode>,
+  </StrictMode>
 )

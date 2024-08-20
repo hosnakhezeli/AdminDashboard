@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import Header from "../header/Header";
+// import Header from "../header/Header";
 import  Container  from "@mui/material/Container";
-
+import ClippedDrawer from "../sidebar/ClippedDrawer"
 
 interface LayoutContainerProps {
     children : ReactNode;
@@ -9,8 +9,8 @@ interface LayoutContainerProps {
 
 const LayoutContainer: React.FC <LayoutContainerProps> = ({children}) => {
     return (
-        <Container maxWidth={false} sx={{ padding: { xs: 1, sm: 2, md: 3 } }}>
-            <Header />
+        <Container maxWidth={false} sx={{ padding: { xs: 5, sm: 6, md: 7 } }}>
+            <ClippedDrawer />
             {children}
         </Container>
     );
