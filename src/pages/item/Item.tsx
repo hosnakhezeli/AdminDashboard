@@ -22,7 +22,6 @@ function createData(
 
 const rows = [
   createData(1, 'محمدحسین', 'طارمی', '09393023301', 1723984406),
-
 ];
 
 export default function BasicTable() {

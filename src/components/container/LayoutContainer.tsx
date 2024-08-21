@@ -9,7 +9,7 @@ interface LayoutContainerProps {
 
 const LayoutContainer: React.FC <LayoutContainerProps> = ({children}) => {
     return (
-        <Container maxWidth={false} sx={{ padding: { xs: 5, sm: 6, md: 7 } }}>
+        <Container maxWidth={false} sx={{ padding: { xs: 5, sm: 6, md: 5 } }}>
             <ClippedDrawer />
             {children}
         </Container>
