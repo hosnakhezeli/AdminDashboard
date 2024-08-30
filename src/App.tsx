@@ -12,18 +12,17 @@ import Userinfo from "./pages/item/Userinfo";
 
 function App() {
   return (
-    <LayoutContainer>
     <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ClippedDrawer />}>
-            <Route index element={<Dashboard />}></Route>
-            <Route path="/item" element={<Item />}></Route>
-            <Route path="user/:userId" element={<Userinfo />} />
-          </Route>
-        </Routes>
+      <LayoutContainer>
+          <Routes>
+            <Route path="/" element={<ClippedDrawer />}>
+              <Route index element={<Dashboard />}></Route>
+              <Route path="/Add" element={<Item />}></Route>
+              <Route path="user/:userId" element={<Userinfo />} />
+            </Route>
+          </Routes>
+        </LayoutContainer>
     </BrowserRouter>
-    </LayoutContainer>
-    
   )
 }
 
